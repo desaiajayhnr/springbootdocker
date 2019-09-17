@@ -11,6 +11,6 @@ public class HelloResource {
     @GetMapping
     public String hello(){
         System.out.println("just saying hi!");
-        return "Hello World!";
+        return "Hello Shankar!";
     }
 }
