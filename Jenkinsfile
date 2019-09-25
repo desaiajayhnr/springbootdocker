@@ -29,7 +29,7 @@ node {
                     pom = readMavenPom file: "pom.xml";
                         echo "1"
                     // Find built artifact under target folder
-                    filesByGlob = findFiles(glob: "springbootdocker/target/*.jar");
+                    filesByGlob = findFiles(glob: "target/*.jar");
                         echo "2"
                     // Print some info from the artifact found
                     echo "${filesByGlob[0].name} ${filesByGlob[0].path} ${filesByGlob[0].directory} ${filesByGlob[0].length} ${filesByGlob[0].lastModified}"
